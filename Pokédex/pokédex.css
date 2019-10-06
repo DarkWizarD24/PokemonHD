@@ -1,0 +1,36 @@
+body {
+	color: #363636;
+	font-family: "Helvetica","Tahoma","Geneva","Arial",sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+	margin: auto;
+	max-width: 750px;
+}
+
+h1 {
+	color: #9b1c47;
+	font-family: "Cinzel",serif;
+	font-size: 2rem;
+	line-height: 1.125;
+	margin-bottom: 0;
+}
+
+h2 {
+	color: #9b1c47;
+	border-bottom: 1px solid #9b1c47;
+	font-family: "Cinzel",serif;
+	font-size: 1.25rem;
+	font-weight: 600;
+	line-height: 1.125;
+	padding-bottom: 0.1rem;
+	margin-bottom: 0.5rem;
+}
+
+a {
+	color: #9b1c47;
+	text-decoration: none;
+}
+
+td {
+	text-align: center;
+}
