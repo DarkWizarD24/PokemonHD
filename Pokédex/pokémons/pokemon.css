@@ -10,6 +10,12 @@ body {
 	max-width: 750px;
 }
 
+hr {
+	clear: both;
+	margin-top: 1rem;
+	border: 1px dashed #9b1c47
+}
+
 h1 {
 	color: #9b1c47;
 	font-family: "Cinzel",serif;
@@ -39,6 +45,12 @@ h2 {
 
 #portrait {
 	float: right;
+}
+
+.portraits-extra {
+	float: right;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 a {
