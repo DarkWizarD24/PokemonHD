@@ -1,0 +1,91 @@
+body {
+	color: #363636;
+	font-family: "Helvetica","Tahoma","Geneva","Arial",sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+#pokemon {
+	margin: auto;
+	max-width: 750px;
+}
+
+h1 {
+	color: #9b1c47;
+	font-family: "Cinzel",serif;
+	font-size: 2rem;
+	line-height: 1.125;
+	margin-bottom: 0;
+}
+
+h2 {
+	color: #9b1c47;
+	border-bottom: 1px solid #9b1c47;
+	font-family: "Cinzel",serif;
+	font-size: 1.25rem;
+	font-weight: 600;
+	line-height: 1.125;
+	padding-bottom: 0.1rem;
+	margin-bottom: 0.5rem;
+}
+
+#english span {
+	font-family: "Marcellus SC",serif;
+	color: #4a4a4a;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+#portrait {
+	float: right;
+}
+
+a {
+	color: #9b1c47;
+	text-decoration: none;
+}
+
+table {
+	text-align: center;
+	border-collapse: collapse;
+}
+
+th {
+	color: #4a4a4a;
+	line-height: 1.5;
+	font-family: "Marcellus SC",serif;
+	font-size: 1.2rem;
+	font-weight: 700;
+	border-bottom: 1px solid #9b1c47;
+	padding: 0 1rem .2rem 1rem;
+}
+
+td {
+	padding: .2rem 1rem .2rem 1rem;
+	font-family: "Cinzel",serif;
+	text-align: center;
+	color: #4a4a4a;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+#vulnerabilités img, #type img, #immunites img, #resistances img {
+	vertical-align: middle;
+}
+
+#precedent, #suivant {
+	font-size: 2rem;
+	line-height: 1.125;
+}
+
+#precedent {
+	position: fixed;
+	margin-left: -50px;
+}
+
+#suivant {
+	position: fixed;
+	margin-left: 800px;
+}
