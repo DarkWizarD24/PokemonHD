@@ -45,6 +45,7 @@ h2 {
 
 #portrait {
 	float: right;
+	clear: right;
 }
 
 .portraits-extra {
