@@ -1,0 +1,41 @@
+@media  (max-width: 600px) {
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+
+	th { 
+		display: none;
+	}
+
+	td {
+		padding-left: 45%;
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		text-align: left;
+		vertical-align: middle;
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 40%; 
+		text-align: left;
+		vertical-align: middle;
+		white-space: nowrap;
+		top: 0.1rem;
+	}
+
+	tr:nth-of-type(2n) td {
+		border-bottom: 1px solid #fff;
+	}
+	
+	td:nth-of-type(1):before { content: "Niveau"; }
+	td:nth-of-type(2):before { content: "Bonus maîtrise"; }
+	td:nth-of-type(3):before { content: "Aptitudes"; }
+	td:nth-of-type(4):before { content: "Pokémons"; }
+	td:nth-of-type(5):before { content: "DE max"; }
+}
