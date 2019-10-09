@@ -2,6 +2,10 @@ img {
 	vertical-align: middle;
 }
 
+table {
+	width: 100%;
+}
+
 @media (max-width: 650px) {
 	.simple, .simple tbody, .simple td, .simple tr {
 		display: block;

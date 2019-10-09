@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Capturer un Pokémon - PokémonHD</title>
+		<link href="https://fonts.googleapis.com/css?family=Cinzel:700&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Average&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="Pokémon.css">
+		<link rel="icon" type="image/png" sizes="32x32" href="Poké_Ball.png">
+	</head>
+	<body>
+		<h1>Capturer un Pokémon</h1>
+		<p>Capturer des Pokémons est élément clé du succè d'un drésseur. Voici les différentes règles concernant la capture des Pokémons :</p>
+		<ul>
+			<li>Un drésseur ne peux posséder plus de Pokémons que son nombre d'<a href="Drésseur.html#Emplacements de Pokémons">emplacements de Pokémons</a>. S'il capture un Pokémon supplémentaire, il est automatiquement envoyé vers Son PC.</li>
+			<li>La Poké ball est détruite si la capture échoue.</li>
+			<li>Un Pokémon capturé conserve son niveau, ses états, ses PP et ses points de vie.</li>
+			<li>Un drésseur ne peux capturer un Pokémon avec un niveau supérieur au sien.</li>
+			<li>Un Pokémon capturé possède le nombre de points d'XP minimum pour son niveau.</li>
+			<li>Un Pokémon K.O. ne peut être capturé.</li>
+			<li>Capturer un Pokémon fait gagner 1/5 points d'XP que s'il avait été battue.</li>
+		</ul>
+		<p>Certains Pokémons sont amicaux et se laisseront capturé, pour d'autre lancer une Pokémon ressemble à lancer un sort sur eux.</p>
+		<h3>Lancer une Poké ball</h3>
+		<div><strong>Temps d'incantation</strong> : 1 action</div>
+		<div><strong>Portée</strong> : 18 m</div>
+		<p><strong>Composantes</strong> : une Poké ball</p>
+		<p>Vous lancer une Poké ball à un Pokémon sauvage dans une tentative de le capturer.</p>
+		<p>Faite un test de Dréssage. Vous avez l'avantage si le pokémon est empoisonné, entravé , endormie, en feu, confus, paralysé ou gelé.</p>
+		<p>Le degré de difficulté pour attrapper le Pokémon est égale à 10 + le DE du Pokémon + le niveau du Pokémon + ses points de vies divisés 10</p>
+		<p>Note : un bonus est accordé en fontion du <a href="TODO LIEN POKE BALL">type de Poké ball</a> que vous utilisez.</p>
+		<h3>Exemple</h3>
+		<p>Vous êtres un drésseur niveau 5 qui tente de capture un Pikachu niveau 3 (DE 1/2). Vous l'avez blessé et le MJ sait qu'il lui reste 15 PV et votre Chétiflor l'a empoisonné.</p>
+		<p>Votre MJ calculera le degré de difficulté comme <strong>10</strong></p>
+		<ul>
+			<li class="sans-puce">+ Dangerosité de l'espèce 1/2 arrondis à l'inférieur : 0</li>
+			<li class="sans-puce">+ Niveau du Pokémon : 3</li>
+			<li class="sans-puce">+ PV du Pokémon (15) divisé par 10 (1,5) arrondis à l'inférieur : 1</li>
+			<li class="sans-puce">= 14</li>
+		</ul>
+		<p>Vous devez alors faire 14 ou plus sur votre jet de Dréssage pour capturer Pikachu avec une simple PokéBall. Vous pouvez gagnez un bonus en utilisant une meilleur Pokémon mais rappellez vous que comme il est empoisonné vous avez l'avantage à votre jet.</p>
+		<p>Note : le MJ ne doit pas révéler le niveau de difficulté exacte, cependant il doit dire si la capture est impossible car le Pokémon est trop haut niveau par rapport au drésseur.</p>
+	</body>
+</html>

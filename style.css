@@ -58,7 +58,7 @@ a {
 }
 
 .simple {
-	width: 100%;
+	margin: auto;
 	border-collapse: collapse;
 	border: none;
 	font-family: "Average",serif;
@@ -76,6 +76,7 @@ a {
 	background: #b5aab9;
 	font-family: "Marcellus SC",serif;
 	color: #fff;
+	text-align: center;
 	font-weight: 700;
 }
 
@@ -100,6 +101,10 @@ li::before {
 	content: "» ";
 }
 
+.sans-puce::before {
+	content: "";
+}
+ 
 #type img {
 	vertical-align: middle;
 }

@@ -31,9 +31,12 @@
 		border-bottom: 1px solid #fff;
 	}
 
-	.simple td:nth-of-type(1):before { content: "Niveau"; }
-	.simple td:nth-of-type(2):before { content: "Bonus maîtrise"; }
-	.simple td:nth-of-type(3):before { content: "Aptitudes"; }
-	.simple td:nth-of-type(4):before { content: "Pokémons"; }
-	.simple td:nth-of-type(5):before { content: "DE max"; }
+	#évolution td:nth-of-type(1):before { content: "Niveau"; }
+	#évolution td:nth-of-type(2):before { content: "Bonus maîtrise"; }
+	#évolution td:nth-of-type(3):before { content: "Aptitudes"; }
+	#évolution td:nth-of-type(4):before { content: "Pokémons"; }
+	#évolution td:nth-of-type(5):before { content: "DE max"; }
+	
+	#niveau td:nth-of-type(1):before { content: "Niveau Dresseur"; }
+	#niveau td:nth-of-type(2):before { content: "Niveau Pokémons"; }
 }

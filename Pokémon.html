@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Pokémon - PokémonHD</title>
+		<link href="https://fonts.googleapis.com/css?family=Cinzel:700&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Average&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="Pokémon.css">
+		<link rel="icon" type="image/png" sizes="32x32" href="Poké_Ball.png">
+	</head>
+	<body>
+		<h1>Pokémon</h1>
+		<h3>Pokémon actif</h3>
+		<p>A tout moment, un drésseur doit avoir un Pokémon actif. Ce Pokémon n'est pas dans sa Poké ball et se ballade avec le drésseur et peut sociabiliser et l'aider avec ses tests de compétences.</p>
+		<p>Lors des combats c'est le premier Pokémon à combattre tant qu'il n'as pas était échangé. Après le combat, il reste le Pokémon actif même s'il a était échangé durant le combat.</p>
+		<p>Un drésseur de changer de Pokémon actif à tout moment sauf juste avant le début d'un combat.</p>
+		<p>Si le Pokémon actif tombe K.O., son drésseur doit choisir un nouveau Pokémon actif.</p>
+		<p>Les pokémons, comme les drésseurs, maîtrises certaines compétences. En dehors des combats, un Pokémon peut aider son drésseur s'il maîtrise une compétence, ceci lui confère l'avantage lors du jet de cette compétence.</p>
+		<h3>Soins</h3>
+		<p>Il existe trois façon de soigner un pokémons :</p>
+		<ul>
+			<li>Les amener au centre Pokémon</li>
+			<li>Prendre un repos court ou long</li>
+			<li>Leur donner des potions ou de la nourriture</li>
+		</ul>
+		<h4>Centre Pokémon</h4>
+		<p>Les centre Pokémon sont des sorte de clinique qui peuvent soigner les Pokémons de tous leurs PV, de leurs états et leur redonner leurs PP en moins de trentres minutes. Ce service est gratuit pour ceux qui possède une license de drésseur. On en trouve dans casiment toutes les villes.</p>
+		<h4>Repos</h4>
+		<p>Un repos long prend au moins huit heure et soigne les états, rends tous les PV et les PP des Pokémons.</p>
+		<p>Un repos court dure au moins trente minutes et permet d'utiliser les dés de vies comme n'importe quel personnage. Un repos court ne rend pas de PP et ne permet pas de réanimer les Pokémons K.O.</p>
+		<h4>Potions et nourriture</h4>
+		<p>Des objets consommables peuvent être donné à un Pokémon pour une action pour les soigner instantanément ou leur conférer un bonus.</p>
+		<h3>Nature</h3>
+		<p>Chaque Pokémon possède sa propre personnalité, ses propres désirs, ce qu'il aime, ce qui lui déplait. Prendre soin d'un Pokémon c'est construire une relation et les accepter pour ceux qu'ils sont. Ce caractère est représenté par la nature du Pokémon. Elle influence ses caractéristiques et ne peux être changé. Ces amélioration sont des bonus et ne compte donc pas dans les limites de 20 points de caractéristiques des montés de niveaux et évolutions.</p>
+		<p>La table suivant permet au MJ de déterminer au hasard la nature d'un Pokémon lors de sa capture. C'est le joueur qui choisit la nature de son Pokémon de départ.</p>
+		<div>
+			<table class="simple" id="nature">
+				<tr>
+					<th>d20</th>
+					<th>Nature</th>
+					<th>Effets</th>
+				</tr>
+				<tr>
+					<td><strong>1</strong></td>
+					<td>Téméraire</td>
+					<td>+2 Force, -2 Dextérité</td>
+				</tr>
+				<tr>
+					<td><strong>2</strong></td>
+					<td>Foufou</td>
+					<td>+2 Force, -2 Constitution</td>
+				</tr>
+				<tr>
+					<td><strong>3</strong></td>
+					<td>Brave</td>
+					<td>+2 Force, -2 Sagesse</td>
+				</tr>
+				<tr>
+					<td><strong>4</strong></td>
+					<td>Arrogant</td>
+					<td>+2 Force, -2 Charisme</td>
+				</tr>
+				<tr>
+					<td><strong>5</strong></td>
+					<td>Nerveux</td>
+					<td>+2 Dextérité, -2 Force</td>
+				</tr>
+				<tr>
+					<td><strong>6</strong></td>
+					<td>Pressé</td>
+					<td>+2 Dextérité, -2 Constitution</td>
+				</tr>
+				<tr>
+					<td><strong>7</strong></td>
+					<td>Énergique</td>
+					<td>+2 Dextérité, -2 Charisme</td>
+				</tr>
+				<tr>
+					<td><strong>8</strong></td>
+					<td>Maladroit</td>
+					<td>+2 Dextérité, -2 Sagesse</td>
+				</tr>
+				<tr>
+					<td><strong>9</strong></td>
+					<td>Apathetic</td>
+					<td>+2 Constitution, -2 Dextérité</td>
+				</tr>
+				<tr>
+					<td><strong>10</strong></td>
+					<td>Têtu</td>
+					<td>+2 Constitution, -2 Sagesse</td>
+				</tr>
+				<tr>
+					<td><strong>11</strong></td>
+					<td>Grincheux</td>
+					<td>+2 Constitution, -2 Charisme</td>
+				</tr>
+				<tr>
+					<td><strong>12</strong></td>
+					<td>Relax</td>
+					<td>+2 Constitution, -2 Force</td>
+				</tr>
+				<tr>
+					<td><strong>13</strong></td>
+					<td>Prudent</td>
+					<td>+2 Sagesse, -2 Force</td>
+				</tr>
+				<tr>
+					<td><strong>14</strong></td>
+					<td>Curieux</td>
+					<td>+2 Sagesse, -2 Constitution</td>
+				</tr>
+				<tr>
+					<td><strong>15</strong></td>
+					<td>Mauvais</td>
+					<td>+2 Sagesse, -2 Charisme</td>
+				</tr>
+				<tr>
+					<td><strong>16</strong></td>
+					<td>Joyeux</td>
+					<td>+2 Charisme, -2 Force</td>
+				</tr>
+				<tr>
+					<td><strong>17</strong></td>
+					<td>Malpoli</td>
+					<td>+2 Charisme, -2 Dextérité</td>
+				</tr>
+				<tr>
+					<td><strong>18</strong></td>
+					<td>Idiot</td>
+					<td>+2 Charisme, -2 Sagesse</td>
+				</tr>
+				<tr>
+					<td><strong>19</strong></td>
+					<td>Hardi</td>
+					<td>+1 CA, -2 Dextérité</td>
+				</tr>
+				<tr>
+					<td><strong>20</strong></td>
+					<td>Agile</td>
+					<td>+1 CA, -2 Force</td>
+				</tr>
+		</table>
+	</div>
+	<h3>Attachement</h3>
+	<p>Développer ses liens avec ses Pokémons est une part importante de la routine du drésseur. A chaque repos long, vous pouvez prendre du temps avec votre Pokémon actif pour renforcer vos liens. Cela peut prendre la forme d'une jeu, partager un repas ou simplement passer un moment agréable ensemble. Jusqu'à votre prochain repos longs, votre Pokémon gagne :</p>
+	<ul>
+		<li>10 points de vie temporaires</li>
+		<li>un point d'inspiration</li>
+	</ul>
+	<h3>Loyauté</h3>
+	<p>Le lien entre le Pokémon et son drésseur n'est pas toujour constant. Il peux fluctuer avec leurs différentes intérractions. Cela est représenté par un niveau de Loyauté. Chacun de ses niveau à un effet sur les compétences du Pokémon, son obéiscance and même pour certains quand il s'il peuvent évoluer.</p>
+	<p>Le niveau de loyauté est déterminé par le MJ. Par exemple il peut augment si vous vous attachez à votre Pokémon, vous lui trouvez sa nourriture préféré, vous gagnez des combats particulièrement difficiles. Il peut baisser si vous captuez un Pokémon de manière indigne, si vous le laissez trop longtemps dans le PC, si vous le laissez tomber K.O. pour économiser un antidote. Les loyautés extrèmes de l'échelle doivent être plus difficiles à atteindre que les niveau proche de la neutralité.</p>
+	<div>
+		<table class="simple" id="loyauté">
+			<tr>
+				<th>Niveau</th>
+				<th>Émotion</th>
+				<th>Effets</th>
+			</tr>
+			<tr>
+				<td><strong>-3</strong></td>
+				<td>Déloyal</td>
+				<td>Les pokémons déloyaux méprisnte le fait d'avoir était capturé. Ils préféreraient être libre. Ils ne ressente pas le besoin d'impressionner ou d'obéir à leur dresseur. Les pokémons avec ce niveau ajoutent -3 à tous leurs jets de sauvegarde. De plus, avant d'utiliser une capacité, leur dresseur doit lancer un d20, sur 15 ou moins, la capacité échoue.</td>
+			</tr>
+			<tr>
+				<td><strong>-2</strong></td>
+				<td>Indifférent</td>
+				<td>Les pokémons indifférents ne se soucient pas de la victoire ou de la défaite de leur dresseur. Ils obéissent parfois et d'autre fois ils refusent simplement d'agir. Les pokémons avec ce niveau ajoutent -2 à tous leurs jets de sauvegarde. De plus, avant d'utiliser une capacité, ils doivent lancer un d20, sur 10 ou moins, ils perdent leur tour.</td>
+			</tr>
+			<tr>
+				<td><strong>-1</strong></td>
+				<td>Mécontent</td>
+				<td>Les pokémons mécontents ont une petite rancoeur contre leur dresseur et celà affecte les combats. Les pokémons avec ce niveau ajoutent -1 à tous leurs jets de sauvegarde.</td>
+			</tr>
+			<tr>
+				<td><strong>0</strong></td>
+				<td>Neutre</td>
+				<td>Les pokémons neutres agissent normalement. Ils obéissent aux ordre de leur dresseur et avec son accord en dehors des combats. Les pokémons fraîchement capturés commence à ce niveau ou plus bas en fonction des conditions de leur capture.</td>
+			</tr>
+			<tr>
+				<td><strong>+1</strong></td>
+				<td>Content</td>
+				<td>Les pokémons contents montrent de l'affection et du respect pour leur dresseur. Les pokémons capturés commencent très rarement à ce nieau. Les pokémons avec ce niveau ajoutent +1 à tous leurs jets de sauvegarde.</td>
+			</tr>
+			<tr>
+				<td><strong>+2</strong></td>
+				<td>Satisfait</td>
+				<td>Les pokémons satisfait place une grande confiance dans leur dresseur et ils adorent passer du bon temps avec eux. Les pokémons avec ce niveau gagnent 5 PV et ajoutent +2 à tous leurs jets de sauvegarde.</td>
+			</tr>
+			<tr>
+				<td><strong>+3</strong></td>
+				<td>Loyal</td>
+				<td>Les pokémon loyaux ont incroyable lien avec leur dresseur. Ils sont prêt à risquer leur propre vie pour la sécurité de leur dresseur. Les pokémons avec ce niveau gagnent 10 PV supplémentaires et ajoutent +2 à tous leurs jets de sauvegarde.</td>
+			</tr>
+		</table>
+	</div>
+	<h3>Jets de sauvegardes contre la mort</h3>
+	<p>Il n'y en a pas pour les pokémons. Quand ils atteignent 0 PV, ils sont K.O. et doivent être remplacer par un autre Pokémon disponible par une action libre.
+	<h3>Types de dégâts</h3>
+	<p>Les types de dégâts classique sont remplacé pour les Pokémons par :</p>
+	<p><img alt="Feu" src="Pokédex/types/Miniature_Type_Feu_SL.png" width="50" height="20" /> <img alt="Eau" src="Pokédex/types/Miniature_Type_Eau_SL.png" width="50" height="20" /> <img alt="Gace" src="Pokédex/types/Miniature_Type_Glace_SL.png" width="50" height="20" /> <img alt="Plante" src="Pokédex/types/Miniature_Type_Plante_SL.png" width="50" height="20" /></li> <img alt="Sol" src="Pokédex/types/Miniature_Type_Sol_SL.png" width="50" height="20" /> <img alt="Roche" src="Pokédex/types/Miniature_Type_Roche_SL.png" width="50" height="20" /> <img alt="électrik" src="Pokédex/types/Miniature_Type_%C3%89lectrik_SL.png" width="50" height="20" /> <img alt="Combat" src="Pokédex/types/Miniature_Type_Combat_SL.png" width="50" height="20" /> <img alt="Spectre" src="Pokédex/types/Miniature_Type_Spectre_SL.png" width="50" height="20" /> <img alt="Psy" src="Pokédex/types/Miniature_Type_Psy_SL.png" width="50" height="20" /> <img alt="Poison" src="Pokédex/types/Miniature_Type_Poison_SL.png" width="50" height="20" /> <img alt="Insecte" src="Pokédex/types/Miniature_Type_Insecte_SL.png" width="50" height="20" /> <img alt="Acier" src="Pokédex/types/Miniature_Type_Acier_SL.png" width="50" height="20" /> <img alt="ténèbres" src="Pokédex/types/Miniature_Type_T%C3%A9n%C3%A8bres_SL.png" width="50" height="20" /> <img alt="fée" src="Pokédex/types/Miniature_Type_F%C3%A9e_SL.png" width="50" height="20" /> <img alt="normal" src="Pokédex/types/Miniature_Type_Normal_SL.png" width="50" height="20" /></p>
+	<h3>Dangerosité de l'espèce (DE)</h3>
+	<p>Dans PokémonHD, chaque Pokémon possède une dangerosité d'espèce (DE). Ce n'est pas la même chose que l'indice de Dangerosité des monstres classiques et ne suit pas les règles classique de création de rencontres.</p>
+	<p>Le DE est un chiffre qui indique la dangerosité global d'une espèce indépendamment de son niveau. Par exemple un Roucoul niveau 10 (DE 1/8) n'est pas aussi fort qu'un Bulbizard niveau 10 (DE 1/2). Cela permet de comparer les espèces et de calculer les points d'expériences des combats.</p>
+	<h3>Chevaucher vos Pokémons</h3>
+	<p>Beaucoup de Pokémon de taille M ou plus peuvent êre chevauché. Il n'y a pas de règles précises, c'est au MJ de voir ce qu'il pense possible. Lorsque vous utilisez un Pokémon comme monture, vous gagner sa vitesse de marche, vol et nage.</p>
+	<h3>Note sur la classe d'armure</h3>
+	<p>La CA d'un Pokémon n'est pas lié à sa Dextérité. L'intention est de représenté la défense de chaque Pokémon. La CA a été calculté ) partir de la DEF, DEF SPE et VIT des Pokémons dans le jeu video. Il faut le voir comme une armure naturelle.</p>
+	<h2>Progression des Pokémons</h2>
+	<h3>Points d'expérience des Pokémons</h3>
+	<p>Les Pokémons reçoivent des points d'expérience (PX) comme récompense lors de leurs victoire au combat ou par le MJ pour avoir participé à une épreuve.</p>
+	<p>Les points d'expérience sont répartis par le drésseur comme il le souhaite parmis les Pokémons ayant participé au combat. Il peux le faire même avec les Pokémons K.O. tant qu'ils ont participé au combat.</p>
+	<p>La table suivant indique les seuils de monté en niveau des Pokémons</p>
+	<div>
+		<table class="simple" id="expérience">
+			<tr>
+				<th>Niveau</th>
+				<th>PX nécessaires</th>
+			</tr>
+			<tr>
+				<td><strong>1</strong></td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td><strong>2</strong></td>
+				<td>200</td>
+			</tr>
+			<tr>
+				<td><strong>3</strong></td>
+				<td>800</td>
+			</tr>
+			<tr>
+				<td><strong>4</strong></td>
+				<td>2,000</td>
+			</tr>
+			<tr>
+				<td><strong>5</strong></td>
+				<td>6,000</td>
+			</tr>
+			<tr>
+				<td><strong>6</strong></td>
+				<td>12,000</td>
+			</tr>
+			<tr>
+				<td><strong>7</strong></td>
+				<td>20,000</td>
+			</tr>
+			<tr>
+				<td><strong>8</strong></td>
+				<td>30,000</td>
+			</tr>
+			<tr>
+				<td><strong>9</strong></td>
+				<td>44,000</td>
+			</tr>
+			<tr>
+				<td><strong>10</strong></td>
+				<td>62,000</td>
+			</tr>
+			<tr>
+				<td><strong>11</strong></td>
+				<td>82,000</td>
+			</tr>
+			<tr>
+				<td><strong>12</strong></td>
+				<td>104,000</td>
+			</tr>
+			<tr>
+				<td><strong>13</strong></td>
+				<td>128,000</td>
+			</tr>
+			<tr>
+				<td><strong>14</strong></td>
+				<td>158,000</td>
+			</tr>
+			<tr>
+				<td><strong>15</strong></td>
+				<td>194,000</td>
+			</tr>
+			<tr>
+				<td><strong>16</strong></td>
+				<td>234,000</td>
+			</tr>
+			<tr>
+				<td><strong>17</strong></td>
+				<td>278,000</td>
+			</tr>
+			<tr>
+				<td><strong>18</strong></td>
+				<td>326,000</td>
+			</tr>
+			<tr>
+				<td><strong>19</strong></td>
+				<td>382,000</td>
+			</tr>
+			<tr>
+				<td><strong>20</strong></td>
+				<td>450,000</td>
+			</tr>
+		</table>
+	</div>
+	<h3>Montée en niveau</h3>
+	<div>
+		<table class="simple" id="expérience">
+			<tr>
+				<th>Niveau</th>
+				<th>Bonus de maîtrise</th>
+				<th>Aptitudes</th>
+				<th><a href="#STAB">STAB</a></th>
+			</tr>
+			<tr>
+				<td><strong>1</strong></td>
+				<td>+2</td>
+				<td>-</td>
+				<td>+0</td>
+			</tr>
+			<tr>
+				<td><strong>2</strong></td>
+				<td>+2</td>
+				<td>-/td>
+				<td>+0</td>
+			</tr>
+			<tr>
+				<td><strong>3</strong></td>
+				<td>+2</td>
+				<td>-</td>
+				<td>+1</td>
+			</tr>
+			<tr>
+				<td><strong>4</strong></td>
+				<td>+2</td>
+				<td><a href="#Amélioration de caractéristiques">Amélioration de caractéristiques</a></td>
+				<td>+1</td>
+			</tr>
+			<tr>
+				<td><strong>5</strong></td>
+				<td>+3</td>
+				<td>-</td>
+				<td>+1</td>
+			</tr>
+			<tr>
+				<td><strong>6</strong></td>
+				<td>+3</td>
+				<td><a href="#Nouvelles capacités">Nouvelles capacités</a></td>
+				<td>+1</td>
+			</tr>
+			<tr>
+				<td><strong>7</strong></td>
+				<td>+3</td>
+				<td>-</td>
+				<td>+2</td>
+			</tr>
+			<tr>
+				<td><strong>8</strong></td>
+				<td>+3</td>
+				<td><a href="#Amélioration de caractéristiques">Amélioration de caractéristiques</a></td>
+				<td>+2</td>
+			</tr>
+			<tr>
+				<td><strong>9</strong></td>
+				<td>+4</td>
+				<td>-</td>
+				<td>+2</td>
+			</tr>
+			<tr>
+				<td><strong>10</strong></td>
+				<td>+4</td>
+				<td><a href="#Nouvelles capacités">Nouvelles capacités</a></td>
+				<td>+2</td>
+			</tr>
+			<tr>
+				<td><strong>11</strong></td>
+				<td>+4</td>
+				<td>-</td>
+				<td>+3</td>
+			</tr>
+			<tr>
+				<td><strong>12</strong></td>
+				<td>+4</td>
+				<td><a href="#Amélioration de caractéristiques">Amélioration de caractéristiques</a></td>
+				<td>+3</td>
+			</tr>
+			<tr>
+				<td><strong>13</strong></td>
+				<td>+5</td>
+				<td>-</td>
+				<td>+3</td>
+			</tr>
+			<tr>
+				<td><strong>14</strong></td>
+				<td>+5</td>
+				<td><a href="#Nouvelles capacités">Nouvelles capacités</a></td>
+				<td>+3</td>
+			</tr>
+			<tr>
+				<td><strong>15</strong></td>
+				<td>+5</td>
+				<td>-</td>
+				<td>+4</td>
+			</tr>
+			<tr>
+				<td><strong>16</strong></td>
+				<td>+5</td>
+				<td><a href="#Amélioration de caractéristiques">Amélioration de caractéristiques</a></td>
+				<td>+4</td>
+			</tr>
+			<tr>
+				<td><strong>17</strong></td>
+				<td>+6</td>
+				<td>-</td>
+				<td>+4</td>
+			</tr>
+			<tr>
+				<td><strong>18</strong></td>
+				<td>+6</td>
+				<td><a href="#Nouvelles capacités">Nouvelles capacités</a></td>
+				<td>+4</td>
+			</tr>
+			<tr>
+				<td><strong>19</strong></td>
+				<td>+6</td>
+				<td><a href="#Amélioration de caractéristiques">Amélioration de caractéristiques</a></td>
+				<td>+5</td>
+			</tr>
+			<tr>
+				<td><strong>20</strong></td>
+				<td>+6</td>
+				<td>-</td>
+				<td>+5</td>
+			</tr>
+		</table>
+	</div>
+	<h3 id="STAB">Same-Type Attack Bonus (STAB)</h3>
+	<p>Quand votre pokémon effecture un jet de dégâts avec une capacité qui partage un type avec lui, il peux y ajouter son STAB. Si la capacité touche plusieurs fois, il n'ajoute qu'une seul fois le bonus et vous pouvez le répartir comme vous le souhaitez entre les touches.</p>
+	<h3 id="Nouvelles capacités">Nouvelles capacités</h3>
+	<p>Quand il monte en niveau un Pokémon peut apprendre de nouvelles capacité. Les Pokémons ne peuvent avoir que quatre capacités à la fois. Lorsqu'il souhaite en apprendre une nouvelle, s'il en a déjà quatres, il doit en oublier une ancienne.</p>
+	<p>Quand il gagne un niveau, un Pokémon peut réapprendre une capacité disponible à un niveau en dessous mais pas à un stade d'évolution inférieur</p>
+	<h3 id="Amélioration de caractéristiques">Amélioration de caractéristiques</h3>
+	<p>Quand il atteind les niveaux 4, 8, 12, 16 et 19, vous pouvez augmenter laa valeur de ses caractéristique de X points. Cette aptitude ne vous permet pas de dépasser 20 dans une valeur de caractéristique (avant application de sa nature).<p>
+	<ul>
+		<li>Si le pokémon fait partie d'une espèce à trois évolutions X vaut 2.</li>
+		<li>Si le pokémon fait partie d'une espèce à deux évolutions X vaut 3.</li>
+		<li>Si le pokémon fait partie d'une espèce sans évolutions X vaut 4.</li>
+	</ul>
+	<p>Vous pouvez choisir de dépenser deux de ces points pour augmenter le STAB de 1.
+	<h3>Évolution</h3>
+	<p>Certains Pokémon peuvent évoluer dans les bonnes conditions, vous trouverez plus de détails dans le <a href="Pokédex/Pokédex.html">Pokédex</a></p>
+	<p>Quand il évolue, les actions suivantes se produisent dans cet ordre :</p>
+	<ol>
+		<li>Il garde ses valeurs de caractéristiques mais gagne un nombre de point supplémentaire indiqué dans sa description. Un Pokémon ne peux dépasser ainsi de plus de 4 la valeur de sa forme évolué avant prise en compte de sa nature. Il ne peux pas dépasser 20 (avant application de sa nature) de cette aminère.</li>
+		<li>Il gagne le dés de vie de sa forme évoluer et l'utilisera pour ses prochain gains de points de vie.</li>
+		<li>Il remplace sa CA (avant application de sa nature), ses résistances, ses immunité et ses vulnérabilités par celles de sa nouvelle forme.</li>
+		<li>Il conserve ses capacités connues mais devra utiliser sa nouvelle liste de capacité pour ses prochains apprentissages.</li>
+	</ol>
+	<p>L'évolution d'un Pokémon peux être retardé par son drésseur mais elle ne peut se produire ensuite qu'à chaque monté de niveau.</p>
+	</body>
+</html>
