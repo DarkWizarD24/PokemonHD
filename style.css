@@ -57,7 +57,7 @@ a {
 	text-decoration: none;
 }
 
-table {
+.simple {
 	width: 100%;
 	border-collapse: collapse;
 	border: none;
@@ -65,11 +65,11 @@ table {
 	margin-bottom: 2em;
 }
 
-tr:nth-of-type(2n) {
+.simple tr:nth-of-type(2n) {
 	background: #ededed;
 }
 
-th {
+.simple th {
 	padding: 6px 25px;
 	text-align: left;
 	vertical-align: middle;
@@ -79,12 +79,12 @@ th {
 	font-weight: 700;
 }
 
-th a {
+.simple th a {
 	color: #fff;
 	border-bottom: 1px solid #9b1c47;
 }
 
-td {
+.simple td {
 	text-align: center;
 }
 
