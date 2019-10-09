@@ -1,15 +1,3 @@
-body {
-	color: #363636;
-	font-family: "Helvetica","Tahoma","Geneva","Arial",sans-serif;
-	font-size: 1rem;
-	line-height: 1.5;
-}
-
-#pokemon {
-	margin: auto;
-	max-width: 750px;
-}
-
 hr {
 	clear: both;
 	margin-top: 1rem;
@@ -17,29 +5,18 @@ hr {
 }
 
 h1 {
-	color: #9b1c47;
-	font-family: "Cinzel",serif;
-	font-size: 2rem;
-	line-height: 1.125;
 	margin-bottom: 0;
 }
 
-h2 {
-	color: #9b1c47;
-	border-bottom: 1px solid #9b1c47;
-	font-family: "Cinzel",serif;
-	font-size: 1.25rem;
-	font-weight: 600;
-	line-height: 1.125;
-	padding-bottom: 0.1rem;
-	margin-bottom: 0.5rem;
+#pokemon {
+	width: 750px;
+	margin:auto;
 }
 
-#english span {
+.english {
 	font-family: "Marcellus SC",serif;
 	color: #4a4a4a;
-	font-size: 1rem;
-	font-weight: 400;
+	font-size: 1.5rem;
 	line-height: 1.5;
 }
 
@@ -49,9 +26,10 @@ h2 {
 }
 
 .portraits-extra {
-	float: right;
+	float: left;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
+	margin-right: 2rem;
 }
 
 a {
@@ -59,12 +37,12 @@ a {
 	text-decoration: none;
 }
 
-table {
+.caractéristiques table {
 	text-align: center;
 	border-collapse: collapse;
 }
 
-th {
+.caractéristiques th {
 	color: #4a4a4a;
 	line-height: 1.5;
 	font-family: "Marcellus SC",serif;
@@ -74,7 +52,7 @@ th {
 	padding: 0 1rem .2rem 1rem;
 }
 
-td {
+.caractéristiques td {
 	padding: .2rem 1rem .2rem 1rem;
 	font-family: "Cinzel",serif;
 	text-align: center;
@@ -101,4 +79,90 @@ td {
 #suivant {
 	position: fixed;
 	margin-left: 800px;
+}
+
+@media (max-width: 900px) {
+	h1 {
+		margin: auto;
+		margin-top: 0;
+		margin-left: 40px;
+	}
+
+	#pokemon {
+		margin: auto;
+		width: auto;
+		float: none;
+	}
+
+	#precedent {
+		position: initial;
+		float: left;
+		margin-left: 0px;
+		margin-right: 10px;
+	}
+
+	#suivant {
+		position: initial;
+		float: right;
+		margin-left: 10px;
+	}
+
+	#portrait {
+		margin: auto;
+		float: rigth;
+	}
+}
+
+@media (max-width: 500px) {
+	#portrait {
+		width: 100%;
+		text-align: center;
+	}
+
+	table, .caractéristiques tbody, .caractéristiques td, .caractéristiques tr {
+		display: block; 
+	}
+
+	.caractéristiques th {
+		display: none;
+	}
+
+	.caractéristiques {
+		border-top: 1px solid #9b1c47;
+		width: 10rem;
+	}
+
+	.caractéristiques td {
+		padding-left: 45%;
+		border: none;
+		border-bottom: 1px solid #9b1c47;
+		position: relative;
+		text-align: left;
+		vertical-align: middle;
+	}
+
+	.caractéristiques td:before {
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 40%; 
+		text-align: left;
+		vertical-align: middle;
+		white-space: nowrap;
+		top: 0.1rem;
+	}
+
+	.caractéristiques td:nth-of-type(1):before { content: "FOR"; }
+	.caractéristiques td:nth-of-type(2):before { content: "DEX"; }
+	.caractéristiques td:nth-of-type(3):before { content: "CON"; }
+	.caractéristiques td:nth-of-type(4):before { content: "INT"; }
+	.caractéristiques td:nth-of-type(5):before { content: "SAG"; }
+	.caractéristiques td:nth-of-type(6):before { content: "CHA"; }
+	
+	
+	.portraits-extra {
+		float: initial;
+		margin: auto;
+		text-align: center;
+	}
 }
