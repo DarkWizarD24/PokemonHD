@@ -25,7 +25,72 @@
 			<li><a href="autres">808 (Meltan) et 809 (Melmetal)&#160;: Autres</h3></a></li>-->
 		</ul>
 		<h2>Liste des pokémons</h2>
-		<h3 id="filtre">Filtres</h3>
+		<h3 id="filtre">► Filtres</h3>
+		<div id="filtres">
+		<h4>Types :</h4>
+		<p>
+			<img id="type_acier" alt="Acier" src="types/Miniature_Type_Acier_SL.png" width="50" height="20" />
+			<img id="type_combat" alt="Combat" src="types/Miniature_Type_Combat_SL.png" width="50" height="20" />
+			<img id="type_dragon" alt="Dragon" src="types/Miniature_Type_Dragon_SL.png" width="50" height="20" />
+			<img id="type_eau" alt="Eau" src="types/Miniature_Type_Eau_SL.png" width="50" height="20" />
+			<img id="type_électrik" alt="Électrik" src="types/Miniature_Type_%C3%89lectrik_SL.png" width="50" height="20" />
+			<img id="type_fée" alt="Fée" src="types/Miniature_Type_F%C3%A9e_SL.png" width="50" height="20" />
+			<img id="type_feu" alt="Feu" src="types/Miniature_Type_Feu_SL.png" width="50" height="20" />
+			<img id="type_glace" alt="Glace" src="types/Miniature_Type_Glace_SL.png" width="50" height="20" />
+			<img id="type_insecte" alt="Insecte" src="types/Miniature_Type_Insecte_SL.png" width="50" height="20" />
+			<img id="type_normal" alt="Normal" src="types/Miniature_Type_Normal_SL.png" width="50" height="20" />
+			<img id="type_obscur" alt="Obscur" src="types/Miniature_Type_Obscur_XY.png" width="50" height="20" />
+			<img id="type_plante" alt="Plante" src="types/Miniature_Type_Plante_SL.png" width="50" height="20" />
+			<img id="type_poison" alt="Poison" src="types/Miniature_Type_Poison_SL.png" width="50" height="20" />
+			<img id="type_psy" alt="Psy" src="types/Miniature_Type_Psy_SL.png" width="50" height="20" />
+			<img id="type_roche" alt="Roche" src="types/Miniature_Type_Roche_SL.png" width="50" height="20" />
+			<img id="type_sol" alt="Sol" src="types/Miniature_Type_Sol_SL.png" width="50" height="20" />
+			<img id="type_spectre" ="Spectre" src="types/Miniature_Type_Spectre_SL.png" width="50" height="20" />
+			<img id="type_ténèbres" alt="Ténèbres" src="types/Miniature_Type_Ténèbres_SL.png" width="50" height="20" />
+			<img id="type_vol" alt="Vol" src="types/Miniature_Type_Vol_SL.png" width="50" height="20" />
+		</p>
+		<h4>Dangerosité Espece :</h4>
+		<p>Min : <select name="DEMin" id="DEMin">
+					<option value="1/8" selected>1/8</option>
+					<option value="1/4">1/4</option>
+					<option value="1/2">1/2</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+				</select></p>
+		<p>Max : <select name="DEMax" id="DEMax">
+					<option value="1/8">1/8</option>
+					<option value="1/4">1/4</option>
+					<option value="1/2">1/2</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15" selected>15</option>
+				</select></p>
+		</div>
 		<script>
 			var filtreType = {
 				"type_acier": true,
@@ -115,70 +180,18 @@
 			$(document).on('click','#DEMax',function(){
 				filtre();
 			});
+			
+			$(document).on('click','#filtre',function(){
+				$("#filtres").toggle();
+				if ($("#filtres").is(':visible')) {
+					this.innerHTML = "▼ Filtre"
+				} else {
+					this.innerHTML = "► Filtre"
+				}
+			});
+			
+			$("#filtres").toggle();
 		</script>
-		<h4>Types :</h4>
-		<p>
-			<img id="type_acier" alt="Acier" src="types/Miniature_Type_Acier_SL.png" width="50" height="20" />
-			<img id="type_combat" alt="Combat" src="types/Miniature_Type_Combat_SL.png" width="50" height="20" />
-			<img id="type_dragon" alt="Dragon" src="types/Miniature_Type_Dragon_SL.png" width="50" height="20" />
-			<img id="type_eau" alt="Eau" src="types/Miniature_Type_Eau_SL.png" width="50" height="20" />
-			<img id="type_électrik" alt="Électrik" src="types/Miniature_Type_%C3%89lectrik_SL.png" width="50" height="20" />
-			<img id="type_fée" alt="Fée" src="types/Miniature_Type_F%C3%A9e_SL.png" width="50" height="20" />
-			<img id="type_feu" alt="Feu" src="types/Miniature_Type_Feu_SL.png" width="50" height="20" />
-			<img id="type_glace" alt="Glace" src="types/Miniature_Type_Glace_SL.png" width="50" height="20" />
-			<img id="type_insecte" alt="Insecte" src="types/Miniature_Type_Insecte_SL.png" width="50" height="20" />
-			<img id="type_normal" alt="Normal" src="types/Miniature_Type_Normal_SL.png" width="50" height="20" />
-			<img id="type_obscur" alt="Obscur" src="types/Miniature_Type_Obscur_XY.png" width="50" height="20" />
-			<img id="type_plante" alt="Plante" src="types/Miniature_Type_Plante_SL.png" width="50" height="20" />
-			<img id="type_poison" alt="Poison" src="types/Miniature_Type_Poison_SL.png" width="50" height="20" />
-			<img id="type_psy" alt="Psy" src="types/Miniature_Type_Psy_SL.png" width="50" height="20" />
-			<img id="type_roche" alt="Roche" src="types/Miniature_Type_Roche_SL.png" width="50" height="20" />
-			<img id="type_sol" alt="Sol" src="types/Miniature_Type_Sol_SL.png" width="50" height="20" />
-			<img id="type_spectre" ="Spectre" src="types/Miniature_Type_Spectre_SL.png" width="50" height="20" />
-			<img id="type_ténèbres" alt="Ténèbres" src="types/Miniature_Type_Ténèbres_SL.png" width="50" height="20" />
-			<img id="type_vol" alt="Vol" src="types/Miniature_Type_Vol_SL.png" width="50" height="20" />
-		</p>
-		<h4>Dangerosité Espece :</h4>
-		<p>Min : <select name="DEMin" id="DEMin">
-					<option value="1/8" selected>1/8</option>
-					<option value="1/4">1/4</option>
-					<option value="1/2">1/2</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-					<option value="11">11</option>
-					<option value="12">12</option>
-					<option value="13">13</option>
-					<option value="14">14</option>
-					<option value="15">15</option>
-				</select></p>
-		<p>Max : <select name="DEMax" id="DEMax">
-					<option value="1/8">1/8</option>
-					<option value="1/4">1/4</option>
-					<option value="1/2">1/2</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-					<option value="11">11</option>
-					<option value="12">12</option>
-					<option value="13">13</option>
-					<option value="14">14</option>
-					<option value="15" selected>15</option>
-				</select></p>
 		<h3 id="gen1">001 (Bulbizarre) à 151 (Mew)&#160;: 1<sup>ère</sup> génération (151)</h3>
 		<table class="simple">
 			<tbody>
