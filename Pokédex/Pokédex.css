@@ -6,6 +6,10 @@ table {
 	width: 100%;
 }
 
+.grisé {
+	filter: opacity(25%);
+}
+
 @media (max-width: 650px) {
 	.simple, .simple tbody, .simple td, .simple tr {
 		display: block;
@@ -43,8 +47,8 @@ table {
 	.simple td:nth-of-type(2):before { content: "Pokémon"; }
 	.simple td:nth-of-type(3):before { content: "Nom français"; }
 	.simple td:nth-of-type(4):before { content: "Nom anglais"; }
-	.simple td:nth-of-type(5):before { content: "Nom japonais"; }
-	.simple td:nth-of-type(6):before { content: "Type"; }
+	.simple td:nth-of-type(5):before { content: "Type"; }
+	.simple td:nth-of-type(6):before { content: "DE"; }
 	
 	.simple td img {
 		margin-bottom: 0.2rem;
