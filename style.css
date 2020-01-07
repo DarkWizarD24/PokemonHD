@@ -4,6 +4,7 @@ body {
 	font-size: 1rem;
 	line-height: 1.5;
 	max-width: 900px;
+	margin-top: 48px;
 }
 
 @media (min-width: 920px) {
@@ -16,21 +17,26 @@ body {
 	background-color: #9b1c47;
 	color: #ffffff;
 	height: 48px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
 }
 
-#menu:before {
-	content:"";
-	background-color:#9b1c47;
-	position: absolute;
-	height: 100%;
-	width: 4000px;
-	left: -2000px;
-	z-index: -1;
+#menu-contenue {
+	max-width: 900px;
+}
+
+@media (min-width: 920px) {
+	#menu-contenue {
+		margin: auto;
+	}
 }
 
 #menu img {
 	height: 40px;
 	margin: 4px;
+	vertical-align: middle;
 }
 
 #menu .titre {
@@ -38,6 +44,8 @@ body {
 	line-height: 1.125;
 	font-weight: 400;
 	font-size: 2rem;
+	color: #ffffff;
+	vertical-align: middle;
 }
 
 p {
