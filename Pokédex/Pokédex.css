@@ -10,7 +10,7 @@ table {
 	filter: opacity(25%);
 }
 
-.click {
+.click, a {
 	cursor: pointer;
 }
 
