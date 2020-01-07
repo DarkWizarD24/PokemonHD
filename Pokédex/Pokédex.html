@@ -181,7 +181,7 @@
 				$("body").css("cursor", "wait");
 				for (var type in filtreType) {
 					if (!filtreType[type]) {
-						basculerFilterParType($('#' + type));
+						basculerFilterParType($('#' + type).get());
 					}
 				}
 				$("body").css("cursor", "default");
@@ -191,7 +191,7 @@
 				$("body").css("cursor", "wait");
 				for (var type in filtreType) {
 					if (filtreType[type]) {
-						basculerFilterParType($('#' + type));
+						basculerFilterParType($('#' + type).get());
 					}
 				}
 				$("body").css("cursor", "default");
