@@ -178,23 +178,23 @@
 			}
 			
 			$(document).on('click','#type_tous',function(){
-				$("body").css("cursor", "wait");
 				for (var type in filtreType) {
 					if (!filtreType[type]) {
-						basculerFilterParType($('#' + type).get());
+						filtreType[type] = true;
+						$("#" + type).removeClass('grisé');
 					}
 				}
-				$("body").css("cursor", "default");
+				filtre();
 			});
 			
 			$(document).on('click','#type_aucun',function(){
-				$("body").css("cursor", "wait");
 				for (var type in filtreType) {
 					if (filtreType[type]) {
-						basculerFilterParType($('#' + type).get());
+						filtreType[type] = false;
+						$("#" + type).addClass('grisé');
 					}
 				}
-				$("body").css("cursor", "default");
+				filtre();				
 			});
 			
 			$(document).on('click','#DEMin',function(){
