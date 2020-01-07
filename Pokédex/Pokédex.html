@@ -179,17 +179,17 @@
 			
 			$(document).on('click','#type_tous',function(){
 				for (var type in filtreType) {
-					if (!filtreType[type.id]) {
+					if (!filtreType[type]) {
 						basculerFilterParType($('#' + type));
-					};
+					}
 				}
 			});
 			
 			$(document).on('click','#type_aucun',function(){
 				for (var type in filtreType) {
-					if (filtreType[type.id]) {
+					if (filtreType[type]) {
 						basculerFilterParType($('#' + type));
-					};
+					}
 				}
 			});
 			
