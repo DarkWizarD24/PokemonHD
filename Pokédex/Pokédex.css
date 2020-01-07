@@ -10,6 +10,10 @@ table {
 	filter: opacity(25%);
 }
 
+.click {
+	cursor: pointer;
+}
+
 @media (max-width: 650px) {
 	.simple, .simple tbody, .simple td, .simple tr {
 		display: block;
