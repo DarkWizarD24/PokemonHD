@@ -62,6 +62,15 @@ body {
 	margin-right: 12px;
 }
 
+#resultats_recherche {
+	float: right;
+	width: 33%;
+	margin-top: 0;
+}
+
+#resultats_recherche a #
+	color: #ffffff;
+}
 
 @media (min-width: 920px) {
 	#recherche input {
