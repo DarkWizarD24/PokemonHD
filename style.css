@@ -32,9 +32,6 @@ body {
 	#menu-contenue {
 		margin: auto;
 	}
-	#menu .titre {
-		font-size: 1.1rem;
-	}
 }
 
 #menu img {
@@ -49,6 +46,12 @@ body {
 	font-size: 2rem;
 	color: #ffffff;
 	vertical-align: middle;
+}
+
+@media (min-width: 920px) {
+	#menu .titre {
+		font-size: 1.1rem;
+	}
 }
 
 #recherche {
