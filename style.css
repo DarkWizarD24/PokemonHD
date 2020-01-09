@@ -48,6 +48,16 @@ body {
 	vertical-align: middle;
 }
 
+#recherche {
+	display: inline;
+}
+
+#recherche input {
+	width: 33%;
+	float: right;
+	margin-top: 12px;
+}
+
 p {
 	margin-top: 0;
 }
