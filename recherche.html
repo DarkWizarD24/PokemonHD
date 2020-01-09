@@ -1243,7 +1243,7 @@
 	donnees.push({titre: 'Zone Étrange', url: 'https://darkwizard24.github.io/PokemonHD/Pokédex/capacitées/Zone Étrange.html'});
 </script>
 						 
-<input id="recherche" type="text" placeholder="Recherche...">
+<input id="champRecherche" type="text" placeholder="Recherche...">
 <ul id="resultats_recherche">
 </ul>
 <script>
@@ -1256,13 +1256,13 @@
 
 	var recherceTemps;
 
-	$('#recherche').keyup(function() {
+	$('#champRecherche').keyup(function() {
 		clearTimeout(recherceTemps);
 		recherceTemps = setTimeout(function() {
 			console.log("recherche");
 			var ul = $('<ul/>').attr("id", 'resultats_recherche');
 
-			const results = fuzzysort.go($('#recherche').val(), donnees, options);
+			const results = fuzzysort.go($('#champRecherche').val(), donnees, options);
 			console.log(results);
 			for (var result of results) {
 				var li = $('<li/>').appendTo(ul);
