@@ -68,7 +68,7 @@ body {
 
 #resultats_recherche {
 	float: right;
-	width: 33%;
+	width: 100%;
 	margin-top: 0;
 	clear: both;
 	background-color: #563f5a;
@@ -83,6 +83,10 @@ body {
 @media (min-width: 920px) {
 	#recherche input {
 		margin-right: 0;
+	}
+	
+	#resultats_recherche {
+		width: 33%;
 	}
 }
 
