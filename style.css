@@ -76,6 +76,10 @@ body {
 	border: solid #000000 1px;
 }
 
+#resultats_recherche:empty {
+	border: none;	
+}
+
 #resultats_recherche a {
 	color: #ffffff;
 }
