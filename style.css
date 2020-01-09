@@ -80,6 +80,10 @@ body {
 	color: #ffffff;
 }
 
+#resultats_recherche li {
+	margin-left: 12px;
+}
+
 @media (min-width: 920px) {
 	#recherche input {
 		margin-right: 0;
