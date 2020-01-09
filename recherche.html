@@ -1259,10 +1259,11 @@
 	$('#recherche').keyup(function() {
 		clearTimeout(recherceTemps);
 		recherceTemps = setTimeout(function() {
-console.log("recherche");
+			console.log("recherche");
 			var ul = $('<ul/>').attr("id", 'resultats_recherche');
 
 			const results = fuzzysort.go($('#recherche').val(), donnees, options);
+			console.log(results);
 			for (var result of results) {
 				var li = $('<li/>').appendTo(ul);
 				var lien = $('<a/>').text(result.obj['titre']).attr("href", result.obj['url']).appendTo(li);
