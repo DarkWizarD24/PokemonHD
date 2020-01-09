@@ -43,14 +43,14 @@ body {
 #menu .titre {
 	font-family: "Cinzel",serif;
 	font-weight: 400;
-	font-size: 2rem;
+	font-size: 1.1rem;
 	color: #ffffff;
 	vertical-align: middle;
 }
 
 @media (min-width: 920px) {
 	#menu .titre {
-		font-size: 1.1rem;
+		font-size: 2rem;
 	}
 }
 
