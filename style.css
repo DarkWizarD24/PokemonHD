@@ -70,6 +70,8 @@ body {
 	float: right;
 	width: 33%;
 	margin-top: 0;
+	clear: both;
+	background-color: #563f5a;
 }
 
 #resultats_recherche a {
