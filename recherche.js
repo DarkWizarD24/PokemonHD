@@ -1,4 +1,4 @@
-var donnees = []
+var donnees = [];
 
 donnees.push{titre: 'Classe de drésseur de Pokémon', url: 'https://darkwizard24.github.io/PokemonHD/Drésseur.html'};
 donnees.push{titre: 'Pokémon', url: 'https://darkwizard24.github.io/PokemonHD/Pokémon.html'};
