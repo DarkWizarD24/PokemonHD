@@ -48,7 +48,7 @@ body {
 	vertical-align: middle;
 }
 
-@media (min-width: 920px) {
+@media (min-width: 480px) {
 	#menu .titre {
 		font-size: 2rem;
 	}
