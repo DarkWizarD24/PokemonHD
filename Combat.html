@@ -19,10 +19,10 @@
 		<h2>Combats</h2>
 		<p>Dans PokémonHD les combats ne sont pas très différent de ce dont vous avez l'habitude, à quelques différences près :
 		<ul>
-			<li>Au début du combat, vous faites un jet d'initiative pour vous et votre Pokémon actif en utilisant le bonus d'initiative du drésseur.</li>
+			<li>Au début du combat, vous faites un seul jet d'initiative pour vous et votre Pokémon en utilisant le bonus d'initiative du Pokémon actif. Vous jouez en même temps que votre Pokémon.</li>
 			<li>Seulement un de vos Pokémons peux être présent sur le champ de bataille à la fois.</li>
-			<li>Changer de Pokémon prends une action. Cependant quand est Pokémon tombe KO, il est remplacer immédiatement pour une action gratuite. Pour pouvoir changer de Pokémon, vous devez être à 18 mètres au moins de lui.</li>
-			<li>Durant votre tours, vos Pokémon et vous pouvez prendre une action de mouvement mais seulement l'un de vous peux effectuer des action et des actions bonus. Le travail du drésseur durant leur tour est d'assister leur Pokémin en intéragissant avec l'environnement, fournissant des potions ou des bonus, en leur donnant des ordres, or en tentant de fuire.</li>
+			<li>Changer de Pokémon prends une action. Cependant quand est Pokémon tombe KO, il est remplacer immédiatement pour une action gratuite. Pour pouvoir changer de Pokémon, vous devez être à 18 mètres au moins de lui. Lorsque vous changez de Pokémon, relancer votre initiative, elle ne s'applique qu'au prochain tour.</li>
+			<li>Durant votre tours, vos Pokémon et vous pouvez prendre une action de mouvement chacun mais seulement l'un de vous peux effectuer des action et des actions bonus. Le travail du drésseur durant leur tour est d'assister leur Pokémin en intéragissant avec l'environnement, fournissant des potions ou des bonus, en leur donnant des ordres, or en tentant de fuire.</li>
 			<li>Vous DEVEZ avoir un Pokémon en combat en permanance. Si vous n'avez plus de Pokémons, vous perdez le combat. Une défaite vous fait perdre la moitié de votre argent, un de loyauté à tous les Pokémons que vous transportez et vous devez immédiatement utiliser un rappel ou trouver un centre Pokémon.</li>
 			<li>Si un Pokémon n'a plus de points de pouvoir (PP) dans aucune de ses capacités, il peux uniquement utiliser <a href="Pok%C3%A9dex/capacit%C3%A9es/Lutte.html">Lutte</a>. Lutte peux être utilisé à tous moment, même s'il reste des PP dans une capacité.</li>
 		</ul>
@@ -40,5 +40,60 @@
 		<p>Il existe des règles strictes qui gouvernent le monde de Pokémon et tout combat de drésseur contre des drésseur est interdit, au risque de perdre sa license de drésseur. De même il est impossible d'attaquer un Pokémon adverse ou de faire attaquer l'adversaire par son Pokémon. Cependant, lors des combats contre des Pokémons sauvages, un drésseur peut attaquer un Pokémon ou s'interposer pour recevoir une attaque.</p>
 		<h2>S'enfuir</h2>
 		<p>Lors d'un combat contre des Pokémons sauvages, un drésseur peut décider que le combat est perdue d'avance et tenter de fuire. Pour une action, il lance un test de dextérité de groupe contre la dextérité la plus élevé parmis les Pokémons sauvages. Si plus de joueurs ont réussit leur jet, c'est un succès et le groupe s'enfuis. Sinon, ils ne peuvent pas retenter avant le prochain tour de ce joueur.</p>
+		<h2>Nouveaux états spéciaux</h2>
+		<p>PokémonHD ajoute de nouveaux états spéciaux pour les Pokémons qui s'ajoute à ceux de Héros & Dragons et d'autres qui les remplacent.<p>
+		<h3>Etats persistants</h3>
+		<p>Un Pokémon ne peut être affecté que par un seul état durable à la fois. S'il en reçoit un nouveau, il est ignoré.<p>
+		<h4>Empoisonné<h4>
+		<ul>
+			<li>Remplace <a href="https://heros-et-dragons.fr/gerer-la-sante-du-personnage#empoisonn%C3%A9">empoisonné<a></li>
+			<li>Un Pokémon empoisonnée souffre d'un désavantage lors de ses jets d'attaque et de ses tests de caractéristique.</li>
+			<li>Il perd un nombre de points de vie égale à son bonus de maîtrise à la fin de chacun de ses tours.</li>
+			<li>Ses adversaire un l'avantage au jet de sauvegarde contre ses capacités.</li>
+			<li>Les Pokémons du type Poison et Acier sont immunisé à cet état.</li>
+		</ul>
+		<h4>Gelé</h4>
+		<ul>
+			<li>Un Pokémon gelé est <a href="https://heros-et-dragons.fr/gerer-la-sante-du-personnage#neutralis%C3%A9">neutralisé</a> et <a href="https://heros-et-dragons.fr/gerer-la-sante-du-personnage#entrav%C3%A9">entravé</a></li>
+			<li>A la fin de chacun de ses tours il peut essaye de se libérer en faisant un test de force DD 15.</li>
+			<li>Hors combat cet éffet dure une heure.</li>
+			<li>Les Pokémons du type Glace sont immunisé à cet état.</li>
+		</ul>
+		<h4>Brûlé</h4>
+		<ul>
+			<li>Un Pokémon brûlé fait deux fois moins de dégâts.</li>
+			<li>Il perd un nombre de points de vie égale à son bonus de maîtrise au début de chacun de ses tours.</li>
+			<li>Les Pokémons du type Feu sont immunisé à cet état.</li>
+		</ul>
+		<h4>Paralysé</h4>
+		<ul>
+			<li>Remplace <a href="https://heros-et-dragons.fr/gerer-la-sante-du-personnage#paralys%C3%A9">paralysé<a></li>
+			<li>Un pokémon paralysé à le désavantage à tous ses jets de sauvegarde de force et de dextérité.</li>
+			<li>Les jets d'attaques contre lui ont l'avantage</li>
+			<li>Après avoir utilisé une capacité qui consomme des PP, il doit lancer un d4. Sur un 1, il est <a href="https://heros-et-dragons.fr/gerer-la-sante-du-personnage#neutralis%C3%A9">neutralisé</a> et <a href="https://heros-et-dragons.fr/gerer-la-sante-du-personnage#entrav%C3%A9">entravé</a>.</li>
+			<li>Les Pokémons du type Electrik sont immunisé à cet état.</li>
+		</ul>
+		<h3>Etats temporaires</h3>
+		<p>Un Pokémon peut être affecté par un état volatile et un état persistant en même temps. Les états temporaires se termine dès la fin du combat.</p>
+		<h4>Endormi</h4>
+		<ul>
+			<li>Un Pokémon endormie est  <a href="https://heros-et-dragons.fr/gerer-la-sante-du-personnage#neutralis%C3%A9">neutralisé</a> et <a href="https://heros-et-dragons.fr/gerer-la-sante-du-personnage#entrav%C3%A9">entravé</a>.</li>
+			<li>Cet état dûre au maximum trois tours.</li>
+			<li>Il ratte tous se jets de sauvegarde de force et de dextérité.</li>
+			<li>S'il retourne dans sa Pokéball, le compteur de tours est mis en pause jusqu'à qu'il retourne au combat.</li>
+			<li>Au début de son tour, il peut utiliser une action bonus pour lancer un d20, il se reveil sir 13 ou plus.</li>
+		</ul>
+		<h4>Confus</h4>
+		<ul>
+			<li>Un Pokémon confus ne peut pas utiliser sa réaction et se déplace à la moitié de sa vitesse.</li>
+			<li>Cet état dûre 1d4 tours, déterminé par un lancé de l'attaquand quand il inflige cet état.</li>
+			<li>Lorsqu'il utilise un capacité qui utilise des PP, il doit lancer un d20, sur 9 ou moins, il s'inflige un nombre de dégâts égale à son bonus de maîtrise et n'effectue par la capacité. Cependant son drésseur peut alors effectué une action. Sur un 20, il n'est plus confus.</li>
+		</ul>
+		<h4>Effrayé</h4>
+		<ul>
+			<li>Un Pokémon effrayé a le désavantage à tous ses jets d'attaques, de compétences et de sauvegarde.</li>
+			<li>Lorsqu'il utilise une capacité qui demande un jet de sauvegarde, l'adversaire à le désavantage.</li>
+			<li>Cet état dure jusqu'à la fin de son prochain tour.</li>
+		</ul>
 	</body>
 </html>
