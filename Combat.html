@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Combats de Pokémons - PokémonHD</title>
+		<link href="https://fonts.googleapis.com/css?family=Cinzel:700&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Average&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="Pokémon.css">
+		<link rel="icon" type="image/png" sizes="32x32" href="Poké_Ball.png">
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	</head>
+	<body>
+		<div id="menu"></div>
+		<script>$("#menu").load("menu.html")</script>
+		<h1>Combats de Pokémons</h1>
+		<p>Une des parties les plus importante de ce jeu est de commander vos Pokémons lors des combats. Les <a href="Pokémon.html">Pokémons</a> ont leur propres statistique, capacité, niveau, ...</p>
+		<h2>Combats</h2>
+		<p>Dans PokémonHD les combats ne sont pas très différent de ce dont vous avez l'habitude, à quelques différences près :
+		<ul>
+			<li>Au début du combat, vous faites un jet d'initiative pour vous et votre Pokémon actif en utilisant le bonus d'initiative du drésseur.</li>
+			<li>Seulement un de vos Pokémons peux être présent sur le champ de bataille à la fois.</li>
+			<li>Changer de Pokémon prends une action. Cependant quand est Pokémon tombe KO, il est remplacer immédiatement pour une action gratuite. Pour pouvoir changer de Pokémon, vous devez être à 18 mètres au moins de lui.</li>
+			<li>Durant votre tours, vos Pokémon et vous pouvez prendre une action de mouvement mais seulement l'un de vous peux effectuer des action et des actions bonus. Le travail du drésseur durant leur tour est d'assister leur Pokémin en intéragissant avec l'environnement, fournissant des potions ou des bonus, en leur donnant des ordres, or en tentant de fuire.</li>
+			<li>Vous DEVEZ avoir un Pokémon en combat en permanance. Si vous n'avez plus de Pokémons, vous perdez le combat. Une défaite vous fait perdre la moitié de votre argent, un de loyauté à tous les Pokémons que vous transportez et vous devez immédiatement utiliser un rappel ou trouver un centre Pokémon.</li>
+			<li>Si un Pokémon n'a plus de points de pouvoir (PP) dans aucune de ses capacités, il peux uniquement utiliser <a href="Pok%C3%A9dex/capacit%C3%A9es/Lutte.html">Lutte</a>. Lutte peux être utilisé à tous moment, même s'il reste des PP dans une capacité.</li>
+		</ul>
+		<h2>Attaque d'opportunité</h2>
+		<p>Si un Pokémon quitte la zone de contrôle d'un autre sans utiliser l'action se désengager, ou qu'il retourne dans sa Pokéball, son adversaire peux utiliser une capacité de corps à corps d'une durée d'une action pour une réaction. Cette capacité consomme des PP normalement.<p>
+		<h2>Capacités</h2>
+		<p>Vos Pokémons ont plusieurs capacités parmis lequelles choisirs durant le combat. Ils ont apprennent mieux en gagnant des niveau ou en utilisant des CT. Les capacité dans PokémonHD fonctionnent comme des sorts dans Héros & Dragons. Chaque capacité à un nombre de Points de Pouvoirs (PP) qui détermine le nombre de fois que la capacité peux être utilisé. Les PP sont regagné par un repos long, un centre Pokémon ou l'utilisation d'un objet come huile.<p>
+		<p>Chaque capacité à une ou des charactéristiques associées. Une seul doit être choisit à chaque utilisation de la capacité, noté CARAC, pour les jets d'attaque, de dégâts et de sauvegarde.<p>
+		<ul>
+			<li>Bonus d'attaque = modificateur de CARAC + bonus de maîtrise</li>
+			<li>Bonus de dégâts = modificateur de CARAC + <a href="Pok%C3%A9mon.html#STAB">STAB</a> (si applicable)</li>
+			<li>DD jet de sauvegarde = 8 + modificateur de CARAC + bonus de maîtrise</li>
+		</ul>
+		<h2>Actions du drésseur</h2>
+		<p>Il existe des règles strictes qui gouvernent le monde de Pokémon et tout combat de drésseur contre des drésseur est interdit, au risque de perdre sa license de drésseur. De même il est impossible d'attaquer un Pokémon adverse ou de faire attaquer l'adversaire par son Pokémon. Cependant, lors des combats contre des Pokémons sauvages, un drésseur peut attaquer un Pokémon ou s'interposer pour recevoir une attaque.</p>
+		<h2>S'enfuir</h2>
+		<p>Lors d'un combat contre des Pokémons sauvages, un drésseur peut décider que le combat est perdue d'avance et tenter de fuire. Pour une action, il lance un test de dextérité de groupe contre la dextérité la plus élevé parmis les Pokémons sauvages. Si plus de joueurs ont réussit leur jet, c'est un succès et le groupe s'enfuis. Sinon, ils ne peuvent pas retenter avant le prochain tour de ce joueur.</p>
+	</body>
+</html>
